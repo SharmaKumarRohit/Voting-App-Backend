@@ -14,6 +14,10 @@ const candidateRoute = require("./routes/candidateRoute");
 app.use("/user", userRoute);
 app.use("/candidate", candidateRoute);
 
+app.get("/", (req, res) => {
+  res.status(200).send("Welcome to Our Voting App");
+});
+
 // Server running URL
 app.listen(PORT, () => {
   console.log(`listening on port: http://localhost:${PORT}`);
