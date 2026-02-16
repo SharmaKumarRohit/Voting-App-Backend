@@ -15,7 +15,7 @@ app.use("/user", userRoute);
 app.use("/candidate", candidateRoute);
 
 app.get("/", (req, res) => {
-  res.status(200).send("Welcome to Our Voting App");
+  res.status(200).send("Welcome to Our Voting App Backend");
 });
 
 // Server running URL
